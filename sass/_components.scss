@@ -1,0 +1,89 @@
+.btn {
+  &-batafsil {
+    padding: 1.8rem 8rem;
+    background-color: transparent;
+    border: 0.3rem solid #fff;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 3rem;
+
+   
+    @include responsive($bp-xxl) {
+      margin-top: 1.5rem;
+      padding: 1.1rem 5rem;
+        }
+
+        @include responsive($bp-s) {
+          margin-top: 1.5rem;
+          padding: 1rem 4rem;
+            }
+            @include responsive($bp-500) {
+              font-size: 1.5rem;
+              padding: 0.5rem 2rem;
+            }
+       
+  }
+  &-jonatish {
+    padding: 1.5rem 3.5rem;
+    background-color: rgb(3, 170, 232);
+    color: #fff;
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    width: 20%;
+    border: none;
+    justify-self: center;
+    text-align: center;
+
+    @include responsive($bp-xxl) {
+    width: 21%;
+    padding: 1.5rem 2.5rem  ;
+  
+     }
+    //  @include responsive($bp-16) {
+    //   margin-top: 1.5rem;
+    //   padding: 1.1rem 3rem;
+    //   width: 24%;
+    //     }
+  }
+}
+
+
+
+.back{
+  background-color: rgba(144, 205, 166, 0.6);
+  height: 35rem;
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  opacity: 0;
+  // position: relative;
+
+  &-zoom{
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+
+  }
+  &-heart{
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.nav-bg{
+  padding: 0 10rem;
+  position: fixed;
+  background-image: linear-gradient(
+    to right,
+    rgb(166, 32, 180),
+    rgb(56, 156, 208)
+  );
+}
