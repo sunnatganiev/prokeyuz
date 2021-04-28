@@ -49,7 +49,12 @@
 .news_first_sec_pic_bottom {
   position: relative;
 }
-
+.info__bottom-all {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 2rem;
+}
 .pic_par {
   position: relative;
   width: 100%;
@@ -79,7 +84,7 @@
   @include responsive($bp-xxl) {
     gap: 5rem;
     grid-template-columns: 100%;
-    grid-template-rows: 20vw 50%;
+    grid-template-rows: 43% 50%;
   }
 
   &-left {
@@ -118,7 +123,6 @@
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       grid-template-columns: 30% 70%;
-
     }
   }
 }
@@ -131,13 +135,15 @@
   position: absolute;
   width: 100%;
   height: 100%;
-
-  
 }
 .second_sec_info {
   /* border: 1px solid black; */
   padding-right: 4rem;
   padding-left: 2rem;
+
+  @include responsive($bp-550) {
+    padding-right: 1rem;
+  }
 }
 
 /* .second_sec_mini_news {
@@ -155,9 +161,8 @@
   text-align: left;
   margin: 0;
   font-size: 2rem;
-  @include responsive($bp-550) {
-    font-size: 3rem;
-    text-align: center;
+  @include responsive($bp-420) {
+    font-size: 1.5rem;
   }
 }
 
@@ -169,29 +174,36 @@
   @include responsive($bp-16) {
     line-height: 2.2rem;
   }
+  @include responsive($bp-550) {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 .second_sec_info_button_div {
   width: 100%;
   text-align: end;
   padding-right: 1rem;
-  margin-top: 5rem;
 
-  @include responsive($bp-16) {
-    margin-top: 3rem;
-  }
 }
 
 .second_sec_info_button {
   border-radius: 3rem;
   background-color: purple;
-  width: 20%;
+  width: 40%;
   // height: 3.5rem;
   color: #fff;
   border: none;
   padding: 1rem 1.8rem;
   // padding-bottom: 0.2rem;
   font-size: 2rem;
+
+  @include responsive($bp-550) {
+    padding: 0.5rem 1.8rem;
+  }
+  @include responsive($bp-420) {
+    width: 58%;
+  }
 }
 
 .second_sec_info_datatime {
@@ -200,6 +212,10 @@
   color: grey;
   padding-left: 0.7rem;
   padding-bottom: 0.7rem;
+
+  @include responsive($bp-550) {
+    font-size: 2rem;
+  }
 }
 
 .second_sec_mini_news {
