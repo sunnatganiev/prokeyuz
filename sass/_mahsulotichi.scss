@@ -68,7 +68,17 @@
   }
   
   .input-group-prepend {
-    padding-top: 3rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgb(211, 207, 207);
+  }
+
+  .input-group-text {
+    height: 5.7rem;
+    width: 4rem;
+    border: none;
+    // box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 50%);
   }
   
   #basic-addon1 {
@@ -84,10 +94,12 @@
   }
   
   .inside_goods_input_number {
-    height: 3.7rem;
+    height: 5.7rem;
     border: none;
-    background-color: rgb(236, 220, 220);
-    width: 7rem;
+    width: 12rem;
+    font-size: 2rem;
+    padding: 2rem;
+    // box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 50%);
   }
   .inside_goods_card_bottom {
     display: grid;
@@ -125,7 +137,7 @@
   }
   
   .inside_goods_foot_purchase {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
   
   .inside_goods_foot_purchase_button {

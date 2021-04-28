@@ -1462,7 +1462,15 @@ h2 {
       line-height: 2rem; } }
 
 .input-group-prepend {
-  padding-top: 3rem; }
+  margin-top: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d3cfcf; }
+
+.input-group-text {
+  height: 5.7rem;
+  width: 4rem;
+  border: none; }
 
 #basic-addon1 {
   width: 7rem;
@@ -1476,10 +1484,11 @@ h2 {
   height: 3.7rem; }
 
 .inside_goods_input_number {
-  height: 3.7rem;
+  height: 5.7rem;
   border: none;
-  background-color: #ecdcdc;
-  width: 7rem; }
+  width: 12rem;
+  font-size: 2rem;
+  padding: 2rem; }
 
 .inside_goods_card_bottom {
   display: grid;
@@ -1512,7 +1521,7 @@ h2 {
   gap: 2rem; }
 
 .inside_goods_foot_purchase {
-  padding-top: 3rem; }
+  padding-top: 1.5rem; }
 
 .inside_goods_foot_purchase_button {
   padding: 2rem 10rem;
