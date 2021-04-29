@@ -3,12 +3,11 @@
   z-index: 0;
 
   @include responsive($bp-600) {
-  padding-bottom: 30%;
+    padding-bottom: 30%;
   }
 
-  
   @include responsive($bp-420) {
-padding-bottom: 258%;
+    padding-bottom: 258%;
   }
 
   &__page {
@@ -59,17 +58,19 @@ padding-bottom: 258%;
 }
 
 .mahsulot-img {
-  height: 35rem;
+  height: 40rem;
 }
 
 .colored {
   color: rgb(255, 213, 74);
 }
+
 .fa-star {
   font-size: 2rem;
   text-align: center;
   padding: 0.1rem;
 }
+
 .stars {
   display: flex;
   justify-content: center;
@@ -78,4 +79,12 @@ padding-bottom: 258%;
 
 .m-logo {
   width: 25rem;
+}
+
+.mahsulot-card:hover .card_inside {
+  text-decoration: none;
+}
+
+.card_inside h3 {
+  color: var(--color-grey-dark-2);
 }
