@@ -226,37 +226,35 @@
   padding: 3% 10%;
   z-index: 0;
 
-  @include responsive($bp-1000) {
+  @include responsive($bp-xxl) {
     padding: 3% 5%;
   }
-  @include responsive($bp-550) {
-    padding: 3% 4%;
-  }
+ 
+  
   @include responsive($bp-420) {
-    padding: 5% 4%;
+    padding: 5% 0;
   }
 }
 
 .home-royxat {
-  display: flex;
-  justify-content: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr );
+gap: 0.5rem;
 }
 .home-item {
   list-style: none;
-  padding: 3rem;
+  padding: 2rem;
+  text-align: center;
   @include responsive($bp-600) {
     padding: 1.5rem;
   }
 }
 .home-link {
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
 
-  @include responsive($bp-1000) {
-    font-size: 3rem;
-  }
   @include responsive($bp-600) {
-    font-size: 2rem;
+  font-size: 2rem;
   }
 }
 
@@ -393,6 +391,9 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  @include responsive($bp-420) {
+    margin: 1rem 1rem;
+   }
 
   &:hover .back {
     opacity: 1;
@@ -400,6 +401,7 @@
     @include responsive($bp-600) {
       display: none;
     }
+    
   }
 
   &--top {
@@ -416,17 +418,18 @@
   @include responsive($bp-xl) {
     gap: 0;
   }
+  @include responsive($bp-s) {
+   grid-template-columns: repeat(3, 1fr);
+  }
   @include responsive($bp-600) {
     gap: 8rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 1vh 2rem;
   }
-  @include responsive($bp-550) {
-    gap: 0;
-  }
+
   @include responsive($bp-420) {
-    grid-template-columns: 40rem;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 }
 .colored {
@@ -467,9 +470,10 @@
   border-radius: 1rem;
   height: 100%;
   width: 30vw;
+  transition: 1s all;
 
   &:hover {
-    transform: scale(1.3) translateY(-1rem);
+    transform:  scale(1.1) translateY(-1rem);
     z-index: 1000;
   }
 
@@ -482,16 +486,29 @@
   }
 }
 
-.bronze-card {
-  background-image: url(../img/bronzed.jpg);
-
-  padding: 2rem 2rem;
-  display: grid;
-  grid-template-rows: 40% 40% 20%;
-  grid-template-columns: 40% 60%;
+.first-card {
   background-size: cover;
   position: absolute;
+  left: 4vw;
+  z-index: 4;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
+  @include responsive($bp-600) {
+    grid-column: 1 / 2;
+    left: 0;
+  }
+  @include responsive($bp-420) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+ 
+}
+.bronze-card {
+  position: absolute;
   left: 20vw;
+  z-index: 3;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
 
   @include responsive($bp-600) {
     grid-column: 2 / 3;
@@ -503,37 +520,13 @@
     grid-column: 1 / 2;
   }
 }
-.first-card {
-  background-color: burlywood;
-  background-image: linear-gradient(to right, burlywood, rgb(92, 82, 6));
-
-  padding: 2rem 2rem;
-  display: grid;
-  grid-template-rows: 40% 40% 20%;
-  grid-template-columns: 40% 60%;
-  background-size: cover;
-  position: absolute;
-  left: 4vw;
-
-  @include responsive($bp-600) {
-    grid-column: 1 / 2;
-    left: 0;
-  }
-  @include responsive($bp-420) {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-}
 .silver-card {
-  background-image: url(../img/silver.jpg);
-
   left: 36vw;
-  padding: 2rem 2rem;
-  display: grid;
-  grid-template-rows: 40% 40% 20%;
-  grid-template-columns: 40% 60%;
   background-size: cover;
   position: absolute;
+  z-index: 2;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
 
   @include responsive($bp-600) {
     grid-column: 1 / 2;
@@ -548,15 +541,14 @@
 }
 
 .gold-card {
-  background-image: url(../img/golden.png);
-  background-size: cover;
 
-  padding: 2rem 2rem;
-  display: grid;
   position: absolute;
   left: 52vw;
-  grid-template-rows: 40% 40% 20%;
-  grid-template-columns: 41% 60%;
+  z-index: 1;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
+
+
 
   @include responsive($bp-600) {
     grid-column: 2 / 3;
@@ -569,12 +561,13 @@
     grid-column: 1 / 2;
   }
 }
+.chegirma-img{
+  height: 100%;
+  width:100%;
 
-.chegirma-logo {
-  width: 60%;
-  justify-self: self-end;
-  margin-top: 5rem;
 }
+
+
 .home-yangiliklar {
   padding: 1% 9%;
   @include responsive($bp-600) {
@@ -604,6 +597,8 @@
 
 .yangilik-card {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 1.5rem;
   @include responsive($bp-xxl) {
     margin-bottom: 3rem;
   }
@@ -643,26 +638,27 @@
   padding: 3rem 7% 5%;
   background-color: rgb(245, 245, 245);
   width: 100%;
-  height: 60rem;
+  height: 69rem;
   margin-top: 10rem;
 
   @include responsive($bp-16) {
     padding: 3rem 7% 5%;
-    height: 55rem;
+    // height: 55rem;
   }
 
   @include responsive($bp-7) {
     grid-template-rows: 1fr;
     padding: 5% 9%;
-    height: 35vh;
+    // height: 35vh;
   }
 
   @include responsive($bp-600) {
     margin-top: 0;
   }
   @include responsive($bp-420) {
-    height: 37vh;
+    // height: 37vh;
     grid-template-columns: 1fr;
+    height: 73rem;
   }
 }
 .home__operator-left {
@@ -723,17 +719,20 @@
 }
 .home_input {
   padding: 2rem 3rem;
-  font-size: rem;
   border: 1px solid rgb(227, 227, 227);
   &-ism {
     padding: 2rem 1rem;
     border: 1px solid rgb(227, 227, 227);
     width: 100%;
+  font-size: 2rem;
+
   }
   &-telefon {
     padding: 2rem 1rem;
     border: 1px solid rgb(227, 227, 227);
     width: 100%;
+  font-size: 2rem;
+
   }
 
   &-email {
@@ -741,6 +740,8 @@
     padding: 2rem 1rem;
     border: 1px solid rgb(227, 227, 227);
     position: relative;
+  font-size: 2rem;
+
   }
 
   &-matn {
@@ -748,6 +749,8 @@
     grid-column: 1 / 3;
     padding: 2rem 1rem 15rem 1rem;
     border: 1px solid rgb(227, 227, 227);
+  font-size: 2rem;
+
 
     @include responsive($bp-420) {
       grid-column: 1 / 3;
