@@ -1743,13 +1743,10 @@ h2 {
 .inside_news_close_button {
   border-radius: 3rem;
   background-color: purple;
-  /* width: 15rem; */
-  /* height: 4.5rem; */
   color: #fff;
   border: none;
-  padding: 0rem 2.8rem;
-  padding-bottom: 0.2rem;
-  /* font-size: 2rem; */ }
+  padding: 1rem 4rem;
+  font-size: 1.5rem; }
 
 .inside_news_datatime {
   width: 100%;
