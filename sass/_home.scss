@@ -380,10 +380,11 @@
     font-size: 1.7rem;
   }
 }
+
 .mahsulot-img {
-  width: 100%;
   height: 80%;
 }
+
 .mahsulot-card {
   // width: 30rem;
   // border: 1px solid black;
@@ -395,6 +396,14 @@
 
   &:hover .back {
     opacity: 1;
+
+    @include responsive($bp-600) {
+      display: none;
+    }
+  }
+
+  &--top {
+    text-align: center;
   }
 }
 .mahsulotlar-view {
@@ -868,4 +877,8 @@
   .shape-fill {
     fill: #faf9f9;
   }
+}
+
+.mahsulot-card:hover .card_inside {
+  text-decoration: none;
 }

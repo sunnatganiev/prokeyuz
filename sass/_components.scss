@@ -7,21 +7,19 @@
     color: #fff;
     margin-top: 3rem;
 
-   
     @include responsive($bp-xxl) {
       margin-top: 1.5rem;
       padding: 1.1rem 5rem;
-        }
+    }
 
-        @include responsive($bp-s) {
-          margin-top: 1.5rem;
-          padding: 1rem 4rem;
-            }
-            @include responsive($bp-500) {
-              font-size: 1.5rem;
-              padding: 0.5rem 2rem;
-            }
-       
+    @include responsive($bp-s) {
+      margin-top: 1.5rem;
+      padding: 1rem 4rem;
+    }
+    @include responsive($bp-500) {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+    }
   }
   &-jonatish {
     padding: 1.5rem 3.5rem;
@@ -35,10 +33,9 @@
     text-align: center;
 
     @include responsive($bp-xxl) {
-    width: 21%;
-    padding: 1.5rem 2.5rem  ;
-  
-     }
+      width: 21%;
+      padding: 1.5rem 2.5rem;
+    }
     //  @include responsive($bp-16) {
     //   margin-top: 1.5rem;
     //   padding: 1.1rem 3rem;
@@ -47,9 +44,7 @@
   }
 }
 
-
-
-.back{
+.back {
   background-color: rgba(144, 205, 166, 0.6);
   height: 75%;
   padding: 2rem;
@@ -60,16 +55,15 @@
   opacity: 0;
   // position: relative;
 
-  &-zoom{
+  &-zoom {
     font-size: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
-
   }
-  &-heart{
+  &-heart {
     font-size: 5rem;
     color: #fff;
     position: absolute;
@@ -78,7 +72,7 @@
   }
 }
 
-.nav-bg{
+.nav-bg {
   padding: 0 10rem;
   position: fixed;
   background-image: linear-gradient(
