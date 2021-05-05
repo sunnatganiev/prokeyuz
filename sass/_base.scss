@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
 $color-primary: #2a00a2;
 $color-primary-dark: #07003b;
 
@@ -51,7 +53,7 @@ html {
 body {
   font-weight: 300;
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .dropdown-toggle {

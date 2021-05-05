@@ -169,12 +169,19 @@
   font-size: 2.2rem;
 
   @include responsive($bp-16) {
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding: 1rem;
   }
-  @include responsive($bp-550) {
-    font-size: 1.7rem;
-    padding: 1rem;
+  @include responsive($bp-1000) {
+    font-size: 1.6rem;
+    
+  }
+  @include responsive($bp-s) {
+    font-size: 1.6rem;
+  }
+  @include responsive($bp-600) {
+    font-size: 2.7rem;
+  
   }
 
 }
@@ -183,8 +190,9 @@
   @include responsive($bp-16) {
     line-height: 2rem;
   }
-  @include responsive($bp-550) {
-    line-height: 1.9rem;
+  @include responsive($bp-600) {
+    line-height: 2.5rem;
+    font-size: 2rem;
   }
  
 }
@@ -244,6 +252,10 @@
 .yangilik-bottom--right {
   font-size: 2rem;
   color: green;
+  @include responsive($bp-xxl) {
+    font-size: 1.2rem;
+    
+  }
 
 
 }
