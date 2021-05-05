@@ -31,8 +31,9 @@
     border: none;
     justify-self: center;
     text-align: center;
-    font-size: 2rem;
 
+    font-size: 2rem;
+     
     @include responsive($bp-xl) {
       width: 26%;
       
@@ -50,6 +51,16 @@
       width: 23%;  
     }
    
+  }
+
+  &-chiqish{
+    padding: 1.5rem 3rem;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 1rem;
   }
 }
 
@@ -89,4 +100,42 @@
     rgb(166, 32, 180),
     rgb(56, 156, 208)
   );
+}
+.toleft{
+  border-radius: 50%;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+ 
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  bottom: 2.5vh;
+  left: -3rem;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    rgb(166, 32, 180)
+  
+  );
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+
+}
+.kamchilik2__btn-saqlash{
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  background-color: rgb(255, 144, 119);
+  width: 15%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  border-radius: 1rem;
+ 
+
 }
