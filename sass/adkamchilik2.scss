@@ -1,4 +1,4 @@
-.admin__dashboard {
+.admin__dashboard-kamchilik2 {
     display: grid;
     grid-template-columns: 13% 87%;
     grid-template-rows: 6% 80%;
@@ -193,8 +193,8 @@
   .admin__kamchilik2-main--top{
 
 display: grid;
-grid-template-columns: repeat(3, 31.5% );
-gap: 5rem;
+grid-template-columns: repeat(3, 1fr );
+gap: 10rem;
 padding: 3rem 0;
 border-bottom: 2px solid grey;
 
@@ -202,17 +202,17 @@ border-bottom: 2px solid grey;
 
   .kamchilik2__shaxsiy{
     display: grid;
-grid-template-rows: repeat(4, 1fr );
+grid-template-rows: repeat(4, 7rem);
 row-gap: 2rem;
   }
   .kamchilik2__kontakt1{
     display: grid;
-grid-template-rows: repeat(4, 1fr );
+grid-template-rows: repeat(4,7rem );
 row-gap: 2rem;
   }
   .kamchilik2__kontakt2{
     display: grid;
-grid-template-rows: repeat(4, 1fr );
+grid-template-rows: repeat(4,7rem );
 row-gap: 2rem;
   }
 
@@ -223,19 +223,23 @@ row-gap: 2rem;
     position: relative;
   }
   .kamchilik2-box{
-padding: 2rem 2rem;
-font-size: 2.5rem;
+padding: 1rem 2rem;
+font-size: 1.5rem;
 background-color: rgb(93, 222, 114);
 color: #fff;
 border-top-left-radius: 1rem;
 border-bottom-left-radius: 1rem;
 text-transform: uppercase;
+display: grid;
+align-items: center;
   }
   .kamchilik2-main-title{
     font-size: 3.5rem;
     font-weight: 900;
     color: rgb(255, 148, 124);
     text-transform: uppercase;
+    padding: 1rem;
+    padding-bottom: 2rem;
   }
   .input-kamchilik2{
     border: none;
@@ -263,4 +267,5 @@ text-transform: uppercase;
     grid-template-columns: repeat(3, 20%) 33%;
     display: grid;
     column-gap: 4rem;
+    height: 7rem;
   }
